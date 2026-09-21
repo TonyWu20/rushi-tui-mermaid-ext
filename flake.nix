@@ -29,7 +29,7 @@
       # Mirror the kernel flake list + genAttrs (not flake-utils
       # eachDefaultSystem, which transposes the result and breaks
       # nix develop / per-system devShells).
-      supportedSystems = [ "x86_64-linux" "aarch64-linux" ];
+      supportedSystems = [ "x86_64-linux" "aarch64-linux" "aarch64-darwin"];
       pkgLib = nixpkgs.lib;
 
       buildFor = system:
